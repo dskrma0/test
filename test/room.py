@@ -18,12 +18,25 @@ class Room(QWidget):
         self.button_back = QPushButton('Back to menu', self)
         self.button_back.move(10, 10)
         self.button_back.setFixedSize(210, 30)
-
-        self.setObjectName('room_widget')
+    
+            # CSS
         self.setStyleSheet('''
-            #room_widget {
-            background-image: url("room_background.png");
-            background-repeat: no-repeat;
-            background-position: center;
+            QPushButton {
+                font-family: 'ARCADECLASSIC';
+                font-size: 30px;
+                background-color: white;
+                color: #701A27;
+                border: 2px solid #573A3D;
+                border-radius: 6px;
             }
-        ''')
+                QPushButton:hover {
+                background-color: #F2D9D5;
+                border: #963859; 
+            }
+                QPushButton:pressed {
+                font-family: 'ARCADECLASSIC';
+                font-size: 30px;
+                background-color: #F7BAB5;
+                color: #701A27;
+            }
+    ''')  
