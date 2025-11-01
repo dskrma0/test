@@ -100,7 +100,7 @@ class Teto(QLabel):
             
             y = self.y() + self.falling_speed # скорость падения у
             x = self.x()
-            self.floor = 260 # уровень пола по оси y
+            self.floor = 280 # уровень пола по оси y
             self.right_wall = 380
             self.left_wall = 0.5
             self.ceiling = 50
